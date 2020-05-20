@@ -22,10 +22,10 @@
             android:layout_marginBottom="20dp"
             android:text="预报"
             android:textColor="?android:attr/textColorPrimary"
-            android:textSize="20sp"/>
+            android:textSiz="20sp"/>
 
         <LinearLayout
-            android:ids="@+id/forecastLayout"
+            android:id="@+id/forecastLayout"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
