@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- APP 公共不随肤映射表 -->
+<resources>
+
+    <!-- region 线line -->
+    <!-- ========================================================================================= -->
+    
+    <!-- 通用分割线 -->
+    <color name="line_separator">@color/ck_gray_dark3</color>
+
+    <!-- 注册/分割线 -->
+    <color name="static_line_signin">@color/ck_gray_light4</color>
+
+    <!-- 登录/分割线 -->
+    <color name="static_line_login">@color/ck_white_30</color>
+
+    <!-- 白色通用分割线 -->
+    <color name="static_line_white">@color/ck_white</color>
+    
+    <!-- 蓝色线 -->
+    <color name="static_line_blue_analyse_trend">@color/ck_blue</color>
+
+    <!-- 紫色线 -->
+    <color name="static_line_analyse_trend_hk">@color/ck_analyse_trend_hk</color>
+
+    <!-- 黄色线 -->
+    <color name="static_line_analyse_trend_us">@color/ck_analyse_trend_us</color>
+
+    <!-- 红色线 -->
+    <color name="static_line_analyse_trend_ch">@color/ck_analyse_trend_ch</color>
+
+    <!-- 浅橙色/分割线 -->
+    <color name="static_line_orange_light">@color/ck_orange_gray_light_20</color>
+
+    <!-- 超链接/黄色 -->
+    <color name="static_text_link4">@color/ck_mustard</color>
+
+    <!-- endregion -->
+
+    <!-- region 公共色块block -->
+    <!-- ========================================================================================= -->
+    
+    <!-- 环球榜单封面遮罩色 -->
+    <color name="static_block_global_list_0">@color/ck_deepgray_light6_90</color>
+
+    <!-- 环球榜单封面遮罩色 -->
+    <color name="static_block_global_list_1">@color/ck_yellow_dark2_90</color>
+
+    <!-- 环球榜单封面遮罩色 -->
+    <color name="static_block_global_list_2">@color/ck_teal_light6_90</color>
+
+    <!-- 环球榜单封面遮罩色 -->
+    <color name="static_block_global_list_3">@color/ck_yellow_dark5_90</color>
+
+    <!-- 环球榜单封面遮罩色 -->
+    <color name="static_block_global_list_4">@color/ck_deepgray_light7_90</color>
+
+    <!-- 环球榜单封面遮罩色 -->
+    <color name="static_block_global_list_5">@color/ck_grayblue_dark1_90</color>
+
+    <!-- 环球榜单封面遮罩色 -->
+    <color name="static_block_global_list_6">@color/ck_orange_dark2_90</color>
+
+    <!-- 环球榜单封面遮罩色 -->
+    <color name="static_block_global_list_7">@color/ck_deepblue_90</color>
+
+    <!-- 环球榜单封面遮罩色 -->
+    <color name="static_block_global_list_8">@color/ck_purple_dark8_90</color>
+
+    <!-- 环球榜单封面遮罩色 -->
+    <color name="static_block_global_list_9">@color/ck_purple_dark7_90</color>
+
+    <!-- 环球榜单封面遮罩色 -->
+    <color name="static_block_global_list_10">@color/ck_brown_light_90</color>
+
+    <!-- 环球榜单封面遮罩色 -->
+    <color name="static_block_global_list_11">@color/ck_green_dark1_90</color>
+
+    <!-- 环球榜单封面遮罩色 -->
+    <color name="static_block_global_list_12">@color/ck_purple_dark6_90</color>
+
+    <!-- 环球榜单封面遮罩色 -->
+    <color name="static_block_global_list_13">@color/ck_navy_dark1_90</color>
+
+    <!-- 环球榜单封面遮罩色 -->
+    <color name="static_block_global_list_14">@color/ck_navy_light4_90</color>
+
+    <!-- 资产分析走势蓝色12%不透明度 -->
+    <color name="static_block_blue_analyse_trend_12">@color/ck_blue_12</color>
+
+    <!-- 富途蓝 -->
+    <color name="static_block_blue">@color/ck_futublue</color>
+
+    <!-- moomoo蓝 -->
+    <color name="static_block_moomooblue">@color/ck_moomooblue</color>
+
+    <!-- 富途蓝 -->
+    <color name="static_block_blue_10">@color/ck_futublue_10</color>    
+
+    <!-- 白色/背景 -->
+    <color name="static_block_white">@color/ck_white</color>
+
+    <!-- 白色/背景20%透明度 -->
+    <color name="static_block_white_20">@color/ck_white_20</color>  
+
+    <!-- 白色/背景10%透明度 -->
+    <color name="static_block_white_10">@color/ck_white_10</color>  
+
+    <!-- 蓝色/推荐点击 -->
+    <color name="static_block_link_blue">@color/ck_skyblue</color> 
+    
+    <!-- 蓝色/按下时_60%透明度 -->
+    <color name="static_block_link_blue_60">@color/ck_skyblue_60</color>            
+
+    <!-- 股价上涨 -->
+    <color name="static_block_rise">@color/ck_red_light2</color>
+
+    <!-- 股价上涨/80%透明度 -->
+    <color name="static_block_rise_80">@color/ck_red_80</color>
+
+    <!-- 股价上涨/30%透明度 -->
+    <color name="static_block_rise_30">@color/ck_red_light2_30</color>
+
+    <!-- 股价上涨/10%透明度 -->
+    <color name="static_block_rise_10">@color/ck_red_10</color>         
+
+    <!-- 股价无变化 -->
+    <color name="static_block_stable">@color/ck_navy_light4</color>
+
+    <!-- 股价无变化 10%透明度 -->
+    <color name="static_block_stable_10">@color/ck_navy_light4_10</color>    
+
+    <!-- 股价下跌 -->
+    <color name="static_block_fall">@color/ck_green</color>
+
+    <!-- 股价下跌/80%透明度 -->
+    <color name="static_block_fall_80">@color/ck_green_80</color>
+
+    <!-- 股价下跌/30%透明度 -->
+    <color name="static_block_fall_30">@color/ck_green_30</color>
+
+    <!-- 股价下跌/6%透明度 -->
+    <color name="static_block_fall_10">@color/ck_green_10</color>
+
+    <!-- 买入/10%透明度 -->
+    <color name="static_block_buy_10">@color/ck_skyblue_10</color> 
+
+    <!-- 卖出/10%透明度 -->
+    <color name="static_block_sell_10">@color/ck_mustard_10</color>   
+
+    <!-- 交易按钮 -->
+    <color name="static_block_trade">@color/ck_mustard_dark3</color> 
+
+    <!-- 交易按钮/30%透明度 -->
+    <color name="static_block_trade_30">@color/ck_mustard_dark3_30</color>   
+
+    <!-- 交易按钮/60%透明度 -->
+    <color name="static_block_trade_60">@color/ck_mustard_dark3_60</color>          
+
+    <!-- 模块叠加 -->
+    <color name="static_block_overlying_gray">@color/ck_grayblue_light5</color>
+
+    <!-- 注册/模块背景 -->
+    <color name="static_block_signin_card_bg">@color/ck_white</color>   
+
+    <!-- 注册/页面背景 -->
+    <color name="static_block_signin_bg">@color/ck_gray_light3</color>
+    
+    <!-- 标签背景1 -->
+    <color name="static_block_label_bg_1">@color/ck_mporange_light1_20</color>
+
+    <!-- 蒙层 -->
+    <color name="static_block_mask">@color/ck_black</color>
+
+    <!-- 蒙层 80％透明度 -->
+    <color name="static_block_mask_80">@color/ck_black_80</color>
+
+    <!-- 蒙层 60％透明度 -->
+    <color name="static_block_mask_60">@color/ck_black_60</color>
+
+    <!-- 蒙层 30％透明度 -->
+    <color name="static_block_mask_30">@color/ck_black_30</color>    
+
+    <!-- 橙色 直播 -->
+    <color name="static_block_orange">@color/ck_orange</color> 
+
+    <!-- 橙色 直播 60%透明度 -->
+    <color name="static_block_orange_pressed">@color/ck_orange_60</color>   
+
+    <!-- 洋红 直播状态 -->
+    <color name="static_block_magenta">@color/ck_magenta</color>      
+
+    <!-- 橙色蒙层 6%透明度 -->
+    <color name="static_block_orange_mask">@color/ck_orange_gray_light_6</color>
+
+    <!-- PK比例条 蓝色 -->
+    <color name="static_block_vote_PK_blue">@color/ck_blue_light6</color>
+
+    <!-- PK比例条 橙色 -->
+    <color name="static_block_vote_PK_orange">@color/ck_orange_light4</color>
+
+    <!-- 分享图_0 -->
+    <color name="static_share_position_ratio_0">@color/ck_red_light1</color>
+
+    <!-- 分享图_1 -->
+    <color name="static_share_position_ratio_1">@color/ck_orange_light1</color> 
+
+    <!-- 分享图_2 -->
+    <color name="static_share_position_ratio_2">@color/ck_yellow</color>
+
+    <!-- 分享图_3 -->
+    <color name="static_share_position_ratio_3">@color/ck_yellow_light2</color>
+
+    <!-- 分享图_4 -->
+    <color name="static_share_position_ratio_4">@color/ck_yellow_light3</color> 
+
+    <!-- 分享图_5 -->
+    <color name="static_share_position_ratio_5">@color/ck_yellow_light4</color>
+    
+    <!-- 新交易tab资产分析现金宝图表颜色 -->
+    <color name="static_newtrade_analyse_chart_moneyplus">@color/ck_yellow_newtrade_analyse_chart_moneyplus</color>
+    
+    <!-- 紫色线渐变 -->
+    <color name="static_block_analyse_trend_hk_12">@color/ck_analyse_trend_hk_12</color>
+
+    <!-- 黄色线渐变 -->
+    <color name="static_block_analyse_trend_us_12">@color/ck_analyse_trend_us_12</color>
+
+    <!-- 红色线渐变 -->
+    <color name="static_block_analyse_trend_ch_12">@color/ck_analyse_trend_ch_12</color>
+
+    <!-- 新交易tab资产分析期货图表颜色 -->
+    <color name="static_newtrade_analyse_chart_futures">@color/ck_green_newtrade_analyse_chart_futures</color>
+
+    <!-- endregion -->
+
+    <!-- region 文本text -->
+    <!-- ========================================================================================= -->
+
+    <!-- 不随肤darkmode标题/正文 -->
+    <color name="static_text_h1_darkmode">@color/ck_gray_dark1</color>
+
+    <!-- 不随肤darkmode副标题/信息字段 -->
+    <color name="static_text_h2_darkmode">@color/ck_deepgray_light5</color>
+
+    <!-- 不随肤darkmode辅助提示 -->
+    <color name="static_text_h3_darkmode">@color/ck_deepgray_light3</color>
+
+    <!-- 深灰/正文 -->
+    <color name="static_text_darkgray">@color/ck_deepgray_light1</color>
+
+    <!-- 深灰_亮/辅助 -->
+    <color name="static_text_darkgray_light">@color/ck_deepgray_light4</color>
+
+    <!-- 高亮文字 -->
+    <color name="static_text_highlight">@color/ck_orange</color>
+
+    <!-- 高亮文字 -->
+    <color name="static_text_highlight_10">@color/ck_orange_10</color>
+
+    <!-- 纯黑/标题 -->
+    <color name="static_text_deepgray">@color/ck_deepgray_light6</color>    
+
+    <!-- 注册/标题 -->
+    <color name="static_text_gray_dark5">@color/ck_gray_dark5</color>
+
+    <!-- 注册/副标题 -->
+    <color name="static_text_gray_dark4">@color/ck_gray_dark4</color> 
+
+    <!-- 注册/辅助提示 -->
+    <color name="static_text_gray_dark2">@color/ck_gray_dark2</color>
+
+    <!-- 灰/分享辅助信息 -->
+    <color name="static_text_gray">@color/ck_gray_dark6</color> 
+
+    <!-- 深灰/分享辅助信息 -->
+    <color name="static_text_weak_gray">@color/ck_gray_dark6</color>            
+
+    <!-- 白色/字体 -->
+    <color name="static_text_white">@color/ck_white</color>
+
+    <!-- 白色/字体_80%透明度 -->
+    <color name="static_text_white_80">@color/ck_white_80</color>
+
+    <!-- 白色/字体_70%透明度 -->
+    <color name="static_text_white_70">@color/ck_white_70</color>
+
+    <!-- 白色/字体_60%透明度 -->
+    <color name="static_text_white_60">@color/ck_white_60</color> 
+
+    <!-- 白色/字体_20%透明度 -->
+    <color name="static_text_white_20">@color/ck_white_20</color>  
+
+    <!-- 白色/字体_50%透明度 -->
+    <color name="static_text_white_50">@color/ck_white_50</color>               
+
+    <!-- 白色/字体_40%透明度 -->
+    <color name="static_text_white_40">@color/ck_white_40</color>
+    
+    <!-- 标签字体1 -->
+    <color name="static_text_label_1">@color/ck_orange_dark</color>
+    
+    <!-- 标签字体2 -->
+    <color name="static_text_label_2">@color/ck_yellow_dark5</color>
+
+    <!-- 按钮字体 按下时 -->
+    <color name="static_text_white_pressed">@color/ck_white_60</color>
+
+    <!-- 按钮字体 禁用时 -->
+    <color name="static_text_white_disable">@color/ck_white_30</color>
+
+    <!-- 买入字体 -->
+    <color name="static_text_buy">@color/ck_lakeblue</color>
+
+    <!-- 卖出字体 -->
+    <color name="static_text_sell">@color/ck_orange</color>
+
+    <!-- 桃红色/rich赞 -->
+    <color name="static_text_pink">@color/ck_red_light5</color>     
+
+    <!-- 警示 -->
+    <color name="static_text_warn">@color/ck_red</color>
+ 
+    <!-- 用于登录 禁用时 -->
+    <color name="static_text_login_blue_disable">@color/ck_skyblue_30</color>  
+
+    <!-- 蓝色/推荐点击 -->
+    <color name="static_text_link_blue">@color/ck_skyblue</color>
+
+    <!-- 蓝色/推荐点击 60%透明度 -->
+    <color name="static_text_link_blue_pressed">@color/ck_skyblue_60</color>
+
+    <!-- 蓝色/推荐点击 30%透明度 -->
+    <color name="static_text_link_blue_disable">@color/ck_skyblue_30</color>
+
+    <!-- 蓝色/登录页文字 50%透明度 -->
+    <color name="static_text_link_blue_50">@color/ck_skyblue_50</color>
+
+    <!-- 蓝 亮/登录辅助信息 -->
+    <color name="static_text_blue_light">@color/ck_blue_dark4</color>
+
+    <!-- 蓝色/分享 -->
+    <color name="static_text_blue">@color/ck_skyblue_dark2</color>
+
+    <!-- 橙色/分享 -->
+    <color name="static_text_orange">@color/ck_futuorange</color>        
+
+    <!-- 棕色/行情卡 -->
+    <color name="static_text_quotecard">@color/ck_brown</color> 
+
+    <!-- 棕色/行情卡 -->
+    <color name="static_text_quotecard_lihgt">@color/ck_brown_light</color> 
+    
+    <!-- 深黄/标签文字 -->
+    <color name="static_text_mustard">@color/ck_mustard</color>
+
+    <!-- PK投票字体 蓝色-->
+    <color name="static_text_vote_pk_blue">@color/ck_blue_light6</color>
+
+    <!-- PK投票字体 橙色-->
+    <color name="static_text_vote_pk_orange">@color/ck_orange_light4</color>
+
+    <!--资讯独家颜色 -->
+    <color name="static_ck_text_tips_red">@color/ck_text_tips_red</color>
+
+    <!--资产走势收益率曲线香港 -->
+    <color name="static_text_analyse_trend_hk">@color/ck_analyse_trend_hk</color>
+
+    <!--资产走势收益率曲线美国 -->
+    <color name="static_text_analyse_trend_us">@color/ck_analyse_trend_us</color>
+
+    <!--资产走势收益率曲线中国 -->
+    <color name="static_text_analyse_trend_ch">@color/ck_analyse_trend_ch</color>
+    
+    <!--基金对比曲线1 -->
+    <color name="static_line_quote_fundtab_analyse_trend1">@color/ck_line_quote_fundtab_analyse_trend1</color>
+    
+    <!--基金对比曲线2 -->
+    <color name="static_line_quote_fundtab_analyse_trend2">@color/ck_line_quote_fundtab_analyse_trend2</color>
+    
+    <!--基金对比曲线3 -->
+    <color name="static_line_quote_fundtab_analyse_trend3">@color/ck_line_quote_fundtab_analyse_trend3</color>
+    
+    <!--基金对比曲线4 -->
+    <color name="static_line_quote_fundtab_analyse_trend4">@color/ck_line_quote_fundtab_analyse_trend4</color>
+    
+    <!--基金对比曲线5 -->
+    <color name="static_line_quote_fundtab_analyse_trend5">@color/ck_line_quote_fundtab_analyse_trend5</color>
+
+    <!-- endregion -->
+
+    <!-- region dialog（弹出式对话框），因为对话框没有公开接口给皮肤引擎，所以只能把所有皮肤下的属性都定义在这里，通过 theme 使用 -->
+    <!-- ========================================================================================= -->
+
+    <!-- dialog 背景 -->
+    <color name="static_dialog_card_bg_default_skin">@color/ck_white</color>
+    <color name="static_dialog_card_bg_white_skin">@color/ck_white</color>
+    <color name="static_dialog_card_bg_black_skin">@color/ck_deepgray_dark5</color>
+
+    <!-- dialog 文本颜色 -->
+    <color name="static_dialog_text_h1_default_skin">@color/ck_deepgray_light1</color>
+    <color name="static_dialog_text_h1_white_skin">@color/ck_deepgray_light1</color>
+    <color name="static_dialog_text_h1_black_skin">@color/ck_gray_dark1</color>
+
+    <!-- dialog 按钮颜色（确认、取消等）（包含三态） -->
+    <color name="static_dialog_text_button_normal_default_skin">@color/ck_blue</color>
+    <color name="static_dialog_text_button_pressed_default_skin">@color/ck_blue_60</color>
+    <color name="static_dialog_text_button_disable_default_skin">@color/ck_blue_30</color>
+
+    <color name="static_dialog_text_button_normal_white_skin">@color/ck_orange_light1</color>
+    <color name="static_dialog_text_button_pressed_white_skin">@color/ck_orange_light1_60</color>
+    <color name="static_dialog_text_button_disable_white_skin">@color/ck_orange_light1_30</color>
+
+    <color name="static_dialog_text_button_normal_black_skin">@color/ck_blue_light5</color>
+    <color name="static_dialog_text_button_pressed_black_skin">@color/ck_blue_light5_60</color>
+    <color name="static_dialog_text_button_disable_black_skin">@color/ck_blue_light5_30</color>
+    <!-- endregion -->
+
+    <!--  region 盈亏分享  -->
+
+    <!--  深色背景  -->
+    <color name="static_trade_share_deep_bg_blue">#184279</color>
+    <color name="static_trade_share_deep_bg_orange">#4B321A</color>
+    <color name="static_trade_share_deep_bg_gray">#151518</color>
+
+    <!-- 渐变色 -->
+    <color name="static_color_gradien_blue_start">#1062CC</color>
+    <color name="static_color_gradien_blue_center">#297FEE</color>
+    <color name="static_color_gradien_blue_end">#1062CC</color>
+
+    <color name="static_color_gradien_orange_start">#FF7B24</color>
+    <color name="static_color_gradien_orange_center">#FF9029</color>
+    <color name="static_color_gradien_orange_end">#FF7B24</color>
+
+    <color name="static_color_gradien_gray_start">#282833</color>
+    <color name="static_color_gradien_gray_center">#323240</color>
+    <color name="static_color_gradien_gray_end">#282833</234color>
+
+    <!--  endregion  -->
+</resources>
