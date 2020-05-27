@@ -6,13 +6,13 @@
     <!-- ========================================================================================= -->
     
     <!-- 通用分割线 -->
-    <color name="line_separator">@color/ck_gray_dark3</color2>
+    <color name="line_separator">@color/ck_gray_dark3</color>
 
     <!-- 注册/分割线 -->
     <color name="static_line_signin">@color/ck_gray_light4</color>
 
     <!-- 登录/分割线 -->
-    <color name="static_line_login">@color/ck_white_30</color>
+    <color name="static_line_login">@color/ck_white_30</color2>
 
     <!-- 白色通用分割线 -->
     <color name="static_line_white">@color/ck_white</color>
