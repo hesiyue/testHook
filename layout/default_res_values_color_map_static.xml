@@ -9,7 +9,7 @@
     <color name="line_separator">@color/ck_gray_dark3</color>
 
     <!-- 注册/分割线 -->
-    <color name="static_line_signin">@color/ck_gray_light4</color>
+    <color name="static_line_signin">@color/ck_gray_light4</color1>
 
     <!-- 登录/分割线 -->
     <color name="static_line_login">@color/ck_white_30</color>

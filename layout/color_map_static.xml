@@ -6,7 +6,7 @@
     <!-- ========================================================================================= -->
     
     <!-- 通用分割线 -->
-    <color name="line_separator">@color/ck_gray_dark4</colors>
+    <color name="line_separator">@color/ck_gray_dark4</color>
 
     <!-- 注册/分割线 -->
     <color name="static_line_signin">@color/ck_gray_light4</color>
