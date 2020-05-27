@@ -434,7 +434,7 @@
 
     <color name="static_color_gradien_gray_start">#282833</color>
     <color name="static_color_gradien_gray_center">#323240</color>
-    <color name="static_color_gradien_gray_end">#282833</234color>
+    <color name="static_color_gradien_gray_end">#282833</color>
 
     <!--  endregion  -->
 </resources>
