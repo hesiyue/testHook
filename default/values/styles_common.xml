@@ -6,7 +6,7 @@
     <!-- region tab -->
     <!-- 主頁底部Tab-->
     <style name="main_bottom_tab" parent="main_bottom_tab_skinnable">
-        <item name="android:saveEnabled">true</item>
+        <item name="android:saveEnabled">false</item>
         <item name="android:ellipsize">none</item>
         <item name="android:gravity">center_horizontal|bottom</item>
         <item name="android:background">@null</item>
