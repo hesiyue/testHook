@@ -1,0 +1,2027 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- region 公共 -->
+
+    <!-- region tab -->
+    <!-- 主頁底部Tab-->
+    <style name="main_bottom_tab" parent="main_bottom_tab_skinnable">
+        <item name="android:saveEnabled">true</item>
+        <item name="android:saveUnEnabled">none</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">@dimen/ft_value_1080p_15px</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <!-- 二级导航Tab 随肤-->
+    <style name="medium_title_indicator" parent="medium_title_skinnable">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/ft_value_1080p_108px</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:background">@drawable/bg_tab_item_secondary_selector</item>
+    </style>
+
+    <!-- 二级导航Tab 不随肤-->
+    <style name="medium_title_common_indicator" parent="medium_title_common">
+        <item name="android:layout_height">@dimen/ft_value_1080p_108px</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:background">@drawable/bg_tab_item_secondary_selector</item>
+    </style>
+
+    <!-- endregion -->
+
+    <!-- 日历控件出现和消失的动画 -->
+    <style name="calendar_popupwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/bottom_show_t</item>
+        <item name="android:windowExitAnimation">@anim/bottom_hide_t</item>
+    </style>
+
+    <!-- 年初至今引导出现和消失的动画 -->
+    <style name="guide_popupwindow_ytd_anim_style">
+        <item name="android:windowEnterAnimation">@anim/guide_pop_optional_ytd_show</item>
+        <item name="android:windowExitAnimation">@anim/guide_pop_optional_ytd_hide</item>
+    </style>
+
+    <!-- guide_upper_left类型引导动画 -->
+    <style name="guide_upper_left_anim_style_popup">
+        <item name="android:windowEnterAnimation">@anim/pop_guide_upper_left_show</item>
+        <item name="android:windowExitAnimation">@anim/pop_guide_upper_left_hide</item>
+    </style>
+
+    <!-- Dialog -->
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/ck_transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!--窗体透明，背景也透明的DialogStyle-->
+    <style name="PointsDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/ck_transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!-- 全屏Dialog -->
+    <style name="FullScreenDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/ck_transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- loading菊花，随肤 -->
+    <style name="progress_bar_skinnable">
+        <item name="android:indeterminateDrawable">@drawable/md_anim_progress_skinnable</item>
+    </style>
+
+    <style name="progress_bar">
+        <item name="android:indeterminateDrawable">@drawable/image_progress</item>
+    </style>
+
+    <style name="progress_bar_launch_static">
+        <item name="android:indeterminateDrawable">@drawable/progress_bar_launch</item>
+    </style>
+
+    <!-- SwitchCompat（支持换肤的简单 Switch） -->
+    <style name="switch_compat_skinnable">
+        <item name="thumbTint">@color/switch_thumb_selector</item>
+        <item name="trackTint">@color/switch_track_selector</item>
+        <item name="android:textOn">""</item>
+        <item name="android:textOff">""</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <!-- CheckBoxCompat（支持换肤） -->
+    <style name="check_box_compat_skinnable">
+        <item name="buttonTint">@color/color_block_highlight_skinnable</item>
+    </style>
+
+    <!-- list item style -->
+    <style name="list_item_white_no_padding">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:background">
+            @drawable/list_item_bg_style_white_common_selector
+        </item>
+    </style>
+
+    <style name="list_item_white">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:background">
+            @drawable/list_item_bg_style_white_common_selector
+        </item>
+    </style>
+
+    <!-- region action toast dialog 动画 -->
+    <!--弹窗动画-->
+    <style name="action_toast_anim" parent="android:Animation">
+        <!--//进入时的动画-->
+        <item name="android:windowEnterAnimation">@anim/action_toast_dialog_enter</item>
+        <!--//退出时的动画-->
+        <item name="android:windowExitAnimation">@anim/action_toast_dialog_exit</item>
+    </style>
+    <!-- endregion action toast dialog 动画 -->
+
+    <!-- region pop弹窗动画 -->
+    <style name="pop_drop_down" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_grow_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_shrink_fade_out</item>
+    </style>
+
+    <style name="pop_drop_up" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_grow_fade_in_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/pop_shrink_fade_out_from_bottom</item>
+    </style>
+
+    <!-- endregion pop弹窗动画 -->
+
+    <!-- region 列表顶部page导航栏 -->
+    <style name="tab_page_indicator_common" parent="medium_title_common_indicator">
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+
+    <style name="tab_page_indicator_common_container">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/ft_value_1080p_108px</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <!-- endregion -->
+
+    <!-- endregion -->
+
+    <!-- region 行情 -->
+
+    <!-- region 体验股 -->
+    <style name="experience_position_list_item_textview_up" parent="text_h1_common_48px">
+        <item name="android:singleLine">true</item>
+        <item name="android:text">@string/def_value</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="experience_position_list_item_textview_down" parent="text_h2_common_36px">
+        <item name="android:singleLine">true</item>
+        <item name="android:text">@string/def_value</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <!-- endregion -->
+
+    <!-- region 新股日历 -->
+    <style name="quote_ipo_widget_header_item" parent="@style/text_h2_skinnable_42px">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:textSize">?futu_font_setting_quote_font_size_1080p_42px_max_3</item>
+    </style>
+
+    <style name="quote_ipo_widget_header_sub_item" parent="@style/text_h2_skinnable_30px">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:textSize">?futu_font_setting_quote_font_size_1080p_30px_max_3</item>
+    </style>
+
+    <style name="quote_ipo_button_style" parent="medium_title_skinnable">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@drawable/bg_tab_item_secondary_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">?futu_font_setting_quote_font_size_1080p_42px_max_3</item>
+    </style>
+    <style name="quote_ipo_widget_item_48px" parent="text_h1_skinnable_48px">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="quote_ipo_widget_item_42px" parent="text_h1_skinnable_42px">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="quote_ipo_widget_item_36px" parent="text_h2_skinnable_36px">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="quote_ipo_listed_header_title" parent="@style/text_link2_skinnable_42px">
+        <item name="android:layout_width">?futu_font_setting_quote_ipo_listed_title_width</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:drawableRight">@drawable/futu_title_sort_arrow_light</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:textSize">?futu_font_setting_quote_font_size_1080p_42px_max_3</item>
+    </style>
+
+    <style name="quote_ipo_normal_header_title" parent="@style/text_link2_skinnable_42px">
+        <item name="android:layout_width">?futu_font_setting_quote_ipo_listed_title_width</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:textSize">?futu_font_setting_quote_font_size_1080p_42px_max_3</item>
+    </style>
+    <style name="quote_ipo_listed_common_item" parent="@style/text_h1_skinnable_36px">
+        <item name="android:layout_width">?futu_font_setting_quote_ipo_listed_title_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:text">@string/def_value</item>
+        <item name="android:textSize">?futu_font_setting_quote_font_size_1080p_36px_max_3</item>
+    </style>
+    <!-- endregion -->
+
+    <!-- region 横屏行情-->
+    <style name="quote_table_header_no_click_item"
+        parent="@style/text_h2_skinnable_42px">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="quote_landscape_header_title"
+        parent="@style/text_link2_skinnable_42px">
+        <item name="android:layout_width">@dimen/plate_header_width</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:drawableRight">@drawable/futu_title_sort_arrow_light</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginRight">4dp</item>
+    </style>
+    <style name="quote_code_name_header_title"
+        parent="@style/text_link2_skinnable_42px">
+        <item name="android:layout_width">@dimen/plate_header_width</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginRight">4dp</item>
+    </style>
+    <!-- endregion -->
+
+    <!--region 行情-市场 指数块样式 -->
+    <!-- 指数块样式 -->
+    <style name="quote_market_summary_card">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/ft_value_1080p_288px</item>
+        <item name="android:background">@drawable/skin_block_bg_drawable</item>
+        <item name="android:paddingTop">@dimen/ft_value_1080p_24px</item>
+        <item name="android:paddingBottom">@dimen/ft_value_1080p_24px</item>
+        <item name="android:paddingLeft">@dimen/ft_value_1080p_27px</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_27px</item>
+    </style>
+
+    <!-- 指数item样式 -->
+    <style name="quote_market_summary_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/ft_value_1080p_240px</item>
+        <item name="android:layout_marginLeft">@dimen/ft_value_1080p_12px</item>
+        <item name="android:layout_marginRight">@dimen/ft_value_1080p_12px</item>
+        <item name="android:paddingLeft">@dimen/ft_value_1080p_12px</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_12px</item>
+    </style>
+
+    <!-- 指数item-涨跌幅及涨跌价格 布局样式 -->
+    <style name="quote_market_summary_item_rise_down" parent="text_reverse_common_36px">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/ft_font_size_1080p_42px</item>
+        <item name="android:layout_marginLeft">@dimen/ft_value_1080p_6px</item>
+        <item name="android:layout_marginRight">@dimen/ft_value_1080p_6px</item>
+    </style>
+
+    <!-- 行情-市场-板块-九宫格item样式 -->
+    <style name="quote_plate_grid_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/ft_value_1080p_282px</item>
+    </style>
+
+    <!-- 行情-股票列表-代码icon样式 -->
+    <style name="quote_code_icon_style">
+        <item name="android:layout_width">@dimen/quote_code_suffix_icon_width</item>
+        <item name="android:layout_height">@dimen/quote_code_suffix_icon_width</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/quote_code_suffix_icon_margin</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <!--endregion -->
+
+    <!-- region 个股详情 -->
+    <style name="quote_summary_card">
+        <item name="android:background">@drawable/skin_block_card_bg_drawable</item>
+        <item name="android:paddingLeft">@dimen/new_ft_global_content_margin_left_30px</item>
+        <item name="android:paddingRight">@dimen/new_ft_global_content_margin_right_30px</item>
+        <item name="android:paddingTop">@dimen/summary_card_margin_top</item>
+        <item name="android:paddingBottom">@dimen/summary_card_margin_bottom</item>
+    </style>
+
+    <style name="quote_chart_index_value_max_width" parent="text_h1_skinnable_36px">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="optional_price_text_label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/ft_value_1080p_36px</item>
+        <item name="android:textColor">@color/color_text_h2_skinnable</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="optional_price_text_value_max_width" parent="optional_price_text_label">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">right|bottom</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/ft_value_1080p_36px</item>
+        <item name="android:textColor">@color/color_text_h1_skinnable</item>
+    </style>
+
+    <style name="optional_price_text_value_max_width_vertical" parent="optional_price_text_label">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/ft_value_1080p_36px</item>
+        <item name="android:textColor">@color/color_text_h1_skinnable</item>
+    </style>
+
+    <style name="optional_price_text_label_42px">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/ft_value_1080p_42px</item>
+        <item name="android:textColor">@color/color_text_h2_skinnable</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="optional_price_text_label_36px" parent="optional_price_text_label_42px">
+        <item name="android:textSize">@dimen/ft_value_1080p_36px</item>
+    </style>
+
+    <style name="chart_checkbox_group">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/skin_block_card_bg_drawable</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="radio_button">
+        <item name="android:textSize">@dimen/chart_radio_button_text_size</item>
+        <item name="android:textColor">@color/color_tab_inner_1_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">
+            @drawable/chart_radio_button_bg_skinnable_selector
+        </item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- tab卡片的TextView样式设计 -->
+
+    <style name="option_bottom_button" parent="text_link2_skinnable_36px">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@null</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">none</item>
+    </style>
+
+    <style name="input_skinnable_42px" parent="text_h1_skinnable_42px">
+        <item name="android:textColorHint">@color/color_text_h3_skinnable</item>
+        <item name="android:background">@drawable/skin_common_chat_inputbox</item>
+    </style>
+
+    <style name="search_input_skinnable_42px" parent="text_h1_skinnable_42px">
+        <item name="android:textColorHint">@color/color_text_h3_skinnable</item>
+        <item name="android:background">@drawable/skin_common_search_inputbox</item>
+    </style>
+
+    <style name="text_model_funds_card" parent="text_h1_skinnable_42px">
+        <item name="android:layout_marginLeft">@dimen/new_ft_global_content_margin_left</item>
+    </style>
+
+    <!-- endregion -->
+
+    <!-- region 行情 pop-->
+    <style name="pop_quote_broker_show_mode_menu">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/pop_quote_broker_item</item>
+        <item name="android:padding">@dimen/ft_value_1080p_12px</item>
+        <item name="android:background">@drawable/pop_item_skinnable_selector</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_36px</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/skin_chart_text_index_selector</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="pop_quote_broker_show_type_menu">
+        <item name="android:layout_width">@dimen/pop_quote_broker_item</item>
+        <item name="android:layout_height">@dimen/pop_quote_broker_item</item>
+        <item name="android:padding">@dimen/ft_font_size_1080p_24px</item>
+        <item name="android:background">@drawable/pop_item_skinnable_selector</item>
+    </style>
+    <!--endregion -->
+
+    <!-- region 板块横屏 -->
+    <style name="quote_table_header_hcode_title" parent="@style/text_h2_skinnable_42px">
+        <item name="android:layout_width">117dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="quote_table_header_acode_title" parent="@style/text_h2_skinnable_42px">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!--美股盘前盘后横屏头部-->
+    <style name="quote_us_pre_after_listed_header_title" parent="@style/text_link2_skinnable_42px">
+        <item name="android:layout_width">@dimen/us_pre_after_list_header_title</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:drawableRight">@drawable/futu_title_sort_arrow_light</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginRight">2dp</item>
+    </style>
+
+    <!--美股盘前盘后横屏列表item-->
+    <style name="quote_us_pre_after_listed_common_item" parent="@style/text_h1_skinnable_48px">
+        <item name="android:layout_width">@dimen/us_pre_after_list_header_title</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:text">@string/def_value</item>
+    </style>
+    <!--endregion -->
+
+    <!-- region 美股期权 -->
+    <style name="us_option_chain_h1_skinnable_36" parent="text_h1_skinnable_36px">
+        <item name="android:layout_width">@dimen/ft_value_1080p_195px</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:textSize">?futu_font_setting_quote_font_size_1080p_36px_max_3</item>
+    </style>
+
+    <style name="us_option_chain_h2_skinnable_36" parent="text_h2_skinnable_36px">
+        <item name="android:layout_width">@dimen/ft_value_1080p_195px</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:textSize">?futu_font_setting_quote_font_size_1080p_36px_max_3</item>
+    </style>
+
+    <style name="us_option_chain_filter_radio" parent="medium_title_skinnable">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:textColor">
+            @color/option_chain_filter_text_color_skinnable_selector
+        </item>
+        <item name="android:textSize">?futu_font_setting_quote_font_size_1080p_42px_max_3</item>
+        <item name="android:background">@drawable/bg_tab_item_secondary_selector</item>
+    </style>
+
+    <!--不带下划线的样式-->
+    <style name="option_chain_filter_radio" parent="medium_title_skinnable">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_marginRight">@dimen/ft_value_1080p_42px</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:textColor">
+            @color/option_chain_filter_text_color_skinnable_selector
+        </item>
+        <item name="android:textSize">?futu_font_setting_quote_font_size_1080p_42px_max_3</item>
+        <item name="android:background">@drawable/skin_common_filter_selector</item>
+    </style>
+    <!-- endregion -->
+
+    <!--region 公司估值筛选框button样式-->
+    <style name="valuation_filter_button_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_marginRight">@dimen/ft_value_1080p_36px</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">@dimen/ft_value_1080p_48px</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_48px</item>
+        <item name="android:textColor">
+            @color/option_chain_filter_text_color_skinnable_selector
+        </item>
+        <item name="android:textSize">?futu_font_setting_quote_font_size_1080p_42px_max_3</item>
+        <item name="android:background">@drawable/skin_common_filter_selector</item>
+    </style>
+    <!-- endregion -->
+
+    <!-- region 选股器 start -->
+    <style name="quote_stock_selector_edit_index_item_name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">
+            @color/stock_selector_index_name_text_color_skinnable_selector
+        </item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_42px</item>
+        <item name="android:text">@string/def_value</item>
+    </style>
+
+    <style name="quote_stock_selector_edit_index_item_value" parent="quote_stock_selector_edit_index_item_name">
+        <item name="android:textSize">@dimen/ft_font_size_1080p_36px</item>
+    </style>
+    <!-- endregion -->
+
+    <!--发现热度榜市场TAB-->
+    <style name="hot_ranking_button_style" parent="medium_title_skinnable">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@drawable/bg_tab_item_secondary_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">?futu_font_setting_quote_font_size_1080p_42px_max_3</item>
+    </style>
+
+    <!--发现热度榜头部-->
+    <style name="hot_ranking_listed_header_title" parent="@style/text_link2_skinnable_42px">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:drawableRight">@drawable/futu_title_sort_arrow_light</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_15px</item>
+        <item name="android:minWidth">@dimen/ft_value_1080p_300px</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginRight">2dp</item>
+    </style>
+
+    <!--发现热度榜头部最新价、涨跌幅-->
+    <style name="hot_unique_listed_header_title" parent="@style/text_link2_skinnable_42px">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_18px</item>
+        <item name="android:minWidth">@dimen/ft_value_1080p_300px</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!--发现热度榜列表item-->
+    <style name="hot_ranking_listed_common_item" parent="@style/text_h1_skinnable_48px">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_18px</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:text">@string/def_value</item>
+    </style>
+    <!--endregion -->
+
+    <!-- 美股盘前盘后选择radio样式 -->
+    <style name="quote_us_pre_after_button_style" parent="medium_title_skinnable">
+        <item name="android:layout_height">36dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@drawable/bg_tab_item_secondary_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/ft_value_1080p_48px</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_48px</item>
+        <item name="android:button">@null</item>
+    </style>
+    <!-- 个股提醒radio样式 -->
+    <style name="quote_stock_remind_button_style" parent="medium_title_common">
+        <item name="android:layout_height">36dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@drawable/bg_tab_item_secondary_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <!--交易历史日历-->
+    <style name="calendar_start_time_filter_input" parent="@style/text_h1_common_42px">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:editable">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_common_input_skinnable_selector</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:textCursorDrawable">@drawable/edit_text_cursor_shape</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:textColorHint">@color/pub_block_assist_color</item>
+    </style>
+    <style name="calendar_recently_time_checkbox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:minWidth">@dimen/ft_value_1080p_165px</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">@dimen/ft_value_1080p_12px</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_12px</item>
+        <item name="android:button">@null</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/recently_time_text_color_checkbox</item>
+        <item name="android:background">@drawable/bg_btn_recently_time_checkbox</item>
+    </style>
+
+    <style name="futu_quote_broker_title" parent="text_h1_skinnable_42px">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/new_ft_global_content_margin_left</item>
+    </style>
+
+    <style name="index_item_price">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:textSize">?futu_font_setting_quote_font_size_1080p_42px_max_3</item>
+        <item name="android:textColor">@color/pub_text_h3_color</item>
+    </style>
+    <style name="index_item_price_layout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+
+    <!-- region 横屏行情 start -->
+    <style name="quote_landscape_common_item" parent="@style/text_h1_skinnable_48px">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:text">@string/def_value</item>
+    </style>
+    <!-- endregion -->
+
+    <!--region通用型滚动的Item -->
+    <style name="quote_scroll_common_item" parent="@style/text_h1_skinnable_48px">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_18px</item>
+        <item name="android:text">@string/def_value</item>
+    </style>
+    <!-- endregion -->
+
+    <!--region通用型滚动的Item的header -->
+    <style name="quote_scroll_header_title" parent="@style/text_link2_skinnable_42px">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">@dimen/ft_value_1080p_18px</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_18px</item>
+        <item name="android:drawablePadding">@dimen/ft_value_1080p_12px</item>
+        <item name="android:minWidth">@dimen/ft_value_1080p_300px</item>
+        <item name="android:textSize">?futu_font_setting_quote_font_size_1080p_42px_max_3</item>
+        <item name="android:drawableRight">@drawable/futu_title_sort_arrow_light</item>
+        <item name="android:gravity">right|center_vertical</item>
+    </style>
+    <!-- endregion -->
+
+    <!--region AH股的header -->
+    <style name="quote_scroll_ah_header_title" parent="@style/text_link2_skinnable_42px">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_18px</item>
+        <item name="android:drawablePadding">@dimen/ft_value_1080p_12px</item>
+        <item name="android:minWidth">@dimen/ft_value_1080p_270px</item>
+        <item name="android:textSize">?futu_font_setting_quote_font_size_1080p_42px_max_3</item>
+        <item name="android:drawableRight">@null</item>
+        <item name="android:gravity">right|center_vertical</item>
+    </style>
+    <!-- endregion -->
+
+    <!--region股东增减持滚动的Item的header -->
+    <style name="quote_shareholders_scroll_header_title" parent="@style/text_link2_skinnable_42px">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingLeft">@dimen/ft_value_1080p_18px</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_18px</item>
+        <item name="android:minWidth">@dimen/ft_value_1080p_300px</item>
+        <item name="android:gravity">right|center_vertical</item>
+    </style>
+    <!-- endregion -->
+
+    <!--region股东增减持滚动的Item -->
+    <style name="quote_shareholders_scroll_item" parent="@style/text_link2_skinnable_42px">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingLeft">@dimen/ft_value_1080p_18px</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_18px</item>
+        <item name="android:drawablePadding">@dimen/ft_value_1080p_12px</item>
+        <item name="android:minWidth">@dimen/ft_value_1080p_300px</item>
+        <item name="android:gravity">right|center_vertical</item>
+    </style>
+    <!-- endregion -->
+
+    <!--region分红派息详情滚动的Item的header -->
+    <style name="quote_dividend_detail_scroll_header_title" parent="@style/text_link2_skinnable_42px">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingLeft">@dimen/ft_value_1080p_18px</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_18px</item>
+        <item name="android:minWidth">@dimen/ft_value_1080p_300px</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <!-- endregion -->
+
+    <!--region分红派息详情滚动的Item -->
+    <style name="quote_dividend_detail_scroll_item" parent="@style/text_h1_skinnable_42px">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingLeft">@dimen/ft_value_1080p_18px</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_18px</item>
+        <item name="android:minWidth">@dimen/ft_value_1080p_300px</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/def_value</item>
+    </style>
+    <!-- endregion -->
+
+    <!-- region 涡轮 -->
+    <style name="warrant_header_no_click_item" parent="@style/text_h2_skinnable_42px">
+        <item name="android:layout_width">@dimen/warrant_item_name_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="warrant_header_title">
+        <item name="android:layout_width">@dimen/warrant_item_width_portrait_first</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:drawableRight">@drawable/futu_title_sort_arrow_light</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:textColor">@color/color_text_link2_skinnable
+        </item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_42px</item>
+    </style>
+
+    <style name="warrant_header_title_second"
+        parent="@style/warrant_header_title">
+        <item name="android:layout_width">@dimen/warrant_item_width_portrait_second</item>
+    </style>
+
+    <style name="warrant_header_title_third"
+        parent="@style/warrant_header_title">
+        <item name="android:layout_width">@dimen/warrant_item_width_portrait_third</item>
+    </style>
+
+    <style name="warrant_header_title_fourth"
+        parent="@style/warrant_header_title">
+        <item name="android:layout_width">@dimen/warrant_item_width_portrait_fourth</item>
+    </style>
+
+    <style name="warrant_header_title_fifth"
+        parent="@style/warrant_header_title">
+        <item name="android:layout_width">@dimen/warrant_item_width_portrait_fifth</item>
+    </style>
+
+    <style name="warrant_filter_input" parent="@style/text_h1_skinnable_42px">
+        <item name="android:layout_width">105dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:background">@drawable/bg_common_input_skinnable_selector</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:textCursorDrawable">@drawable/edit_text_cursor_shape</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:textColorHint">@color/skin_text_h3</item>
+    </style>
+
+    <style name="warrant_common_item" parent="@style/text_h1_skinnable_42px">
+        <item name="android:layout_width">@dimen/warrant_item_width_portrait_first</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">right</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:text">@string/def_value</item>
+    </style>
+
+    <style name="warrant_common_item_second" parent="@style/warrant_common_item">
+        <item name="android:layout_width">@dimen/warrant_item_width_portrait_second</item>
+    </style>
+
+    <style name="warrant_common_item_third" parent="@style/warrant_common_item">
+        <item name="android:layout_width">@dimen/warrant_item_width_portrait_third</item>
+    </style>
+
+    <style name="warrant_common_item_fourth" parent="@style/warrant_common_item">
+        <item name="android:layout_width">@dimen/warrant_item_width_portrait_fourth</item>
+    </style>
+
+    <style name="warrant_common_item_fifth" parent="@style/warrant_common_item">
+        <item name="android:layout_width">@dimen/warrant_item_width_portrait_fifth</item>
+    </style>
+
+    <style name="warrant_filter_checkbox">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/warrant_checkbox_text_color</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_42px</item>
+        <item name="android:background">@drawable/bg_btn_warrant_filter_checkbox</item>
+    </style>
+
+    <style name="warrant_line" parent="@style/line_divider_horizontal_skinnable">
+    </style>
+
+    <style name="warrant_filter_title_text" parent="text_h2_skinnable_42px">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">@dimen/new_ft_global_content_margin_left</item>
+    </style>
+
+    <style name="warrant_filter_input_widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginLeft">@dimen/new_ft_global_content_margin_left</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+    </style>
+
+    <!-- endregion -->
+
+    <!-- region 指标 -->
+    <style name="chart_index_landscape_opt">
+        <item name="android:textColor">@color/skin_chart_text_index_selector</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_30px</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@color/ck_transparent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!-- endregion -->
+
+    <!-- endregion -->
+
+    <!-- region 交易 -->
+
+    <!-- 订单列表标题 (可点击) （随肤） -->
+    <style name="order_list_title_clickable"
+        parent="@style/text_link2_skinnable_42px">
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/list_title_height</item>
+    </style>
+
+    <!-- 订单列表标题 (不可点击) （随肤） -->
+
+    <!--region 交易HomeTab -->
+    <style name="futu_account_funds_assets_content" parent="text_h1_common_42px">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/def_value</item>
+    </style>
+
+    <style name="futu_account_funds_assets_title" parent="text_h2_common_36px">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="futu_account_funds_assets_value" parent="text_h1_common_48px">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">26dp</item>
+        <item name="android:text">@string/def_value</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">@dimen/trade_home_assert_widget_margin</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <!-- endregion -->
+
+
+    <!--region 基金首页-->
+    <style name="trade_fund_home_tag" parent="text_h2_common_30px">
+        <item name="android:background">@drawable/pub_bg_tips_fund_shape</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingLeft">@dimen/ft_value_1080p_12px</item>
+        <item name="android:paddingTop">@dimen/ft_value_1080p_5px</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_12px</item>
+        <item name="android:paddingBottom">@dimen/ft_value_1080p_5px</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/pub_fund_tips_text_color</item>
+        <item name="android:textSize">?futu_font_setting_trade_font_size_1080p_30px</item>
+    </style>
+    <!--endregion-->
+
+    <style name="trade_apply_for_bank_securities_transfer">
+        <item name="android:textColor">@color/pub_block_card_bg_color</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_48px</item>
+        <item name="android:background">@drawable/common_button_common_selector</item>
+        <item name="android:layout_marginLeft">@dimen/ft_value_1080p_48px</item>
+        <item name="android:layout_marginRight">@dimen/ft_value_1080p_48px</item>
+
+    </style>
+
+    <style name="trade_transfer_warm_tip_tv" parent="text_h2_common_36px">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/futu_trade_value_margin_left</item>
+        <item name="android:layout_marginLeft">@dimen/new_ft_global_content_margin_left</item>
+    </style>
+
+    <!-- 银证转账编辑框 -->
+    <style name="trade_transfer_edit_common" parent="text_h1_common_48px">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textCursorDrawable">@drawable/edit_text_cursor_shape</item>
+    </style>
+
+    <!-- 银证转账文本显示框 -->
+    <style name="trade_transfer_text_common" parent="text_h1_common_48px">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <!-- 银证转账标题显示框 -->
+    <style name="trade_transfer_text_tile_common" parent="text_h1_common_48px">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/new_ft_global_content_margin_left</item>
+    </style>
+
+    <!--今日转账查询显示-->
+    <style name="trade_query_text_common" parent="text_h2_common_42px">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/new_ft_global_content_margin_left</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <!--今日转账查询item标题本文-->
+    <style name="trade_query_text_title_common" parent="text_h2_common_42px">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/new_ft_global_content_margin_left</item>
+    </style>
+
+    <!--温馨提示-->
+    <style name="trade_transfer_tip_title_common" parent="text_h2_common_36px">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/new_ft_global_content_margin_left</item>
+    </style>
+
+    <!--A股券商标签-->
+    <style name="trade_cn_label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/def_value</item>
+        <item name="android:textColor">#F67423</item>
+        <item name="android:textSize">?futu_font_setting_trade_font_size_1080p_24px_max_3</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:background">@drawable/pub_trade_bg_broker_tag</item>
+    </style>
+
+    <!--分享选项item-->
+    <style name="trade_share_option">
+        <item name="android:layout_width">@dimen/share_what_option_view_width</item>
+        <item name="android:layout_height">@dimen/share_what_option_view_height</item>
+        <item name="android:layout_marginLeft">@dimen/share_what_option_view_margin</item>
+        <item name="android:layout_marginRight">@dimen/share_what_option_view_margin</item>
+        <item name="android:background">@drawable/static_share_shape_option_bg</item>
+    </style>
+    <style name="trade_share_option_moomoo">
+        <item name="android:layout_width">@dimen/share_what_option_view_width</item>
+        <item name="android:layout_height">@dimen/share_what_option_view_height</item>
+        <item name="android:layout_marginLeft">@dimen/share_what_option_view_margin</item>
+        <item name="android:layout_marginRight">@dimen/share_what_option_view_margin</item>
+        <item name="android:background">@drawable/static_share_shape_option_bg_moomoo</item>
+    </style>
+    <style name="trade_price_quantity_widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="trade_operation_widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+    <style name="trade_direction_widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/skin_block_card_bg_drawable</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="trade_condition_tips_widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginLeft">@dimen/new_ft_global_content_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/new_ft_global_content_margin_right</item>
+    </style>
+    <style name="trade_sell_type_widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/skin_block_card_bg_drawable</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="trade_submit_tips_widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- 交易条件输入控件，因为包含提示 tips，所以背景要用页面背景 -->
+    <style name="trade_condition_widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- 交易条件输入控件，因为包含提示 tips，所以背景要用页面背景 -->
+    <style name="trade_condition_time_widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- 订单列表标题 (不可点击) （随肤） -->
+    <style name="order_list_title" parent="text_h2_skinnable_42px">
+        <item name="android:padding">0dp</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/list_title_height</item>
+    </style>
+
+    <!-- 订单列表标题 (不可点击) （不随肤） -->
+    <style name="order_list_title_white_mode" parent="text_h2_common_42px">
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="order_list_title_layout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/list_title_height</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/new_ft_global_content_margin_left</item>
+        <item name="android:paddingRight">@dimen/new_ft_global_content_margin_right</item>
+        <item name="android:background">@drawable/skin_block_card_bg_drawable</item>
+    </style>
+    <style name="order_list_item_textview_up" parent="text_h1_skinnable_48px">
+        <item name="android:singleLine">true</item>
+        <item name="android:text">@string/def_value</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="order_list_item_textview_up_constraint" parent="text_h1_skinnable_48px">
+        <item name="android:singleLine">true</item>
+        <item name="android:text">@string/def_value</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="order_list_item_textview_down" parent="text_h2_skinnable_36px">
+        <item name="android:singleLine">true</item>
+        <item name="android:text">@string/def_value</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="order_list_item_textview_down_constraint" parent="text_h2_skinnable_36px">
+        <item name="android:singleLine">true</item>
+        <item name="android:text">@string/def_value</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="order_list_item_opt_btn" parent="text_link2_common_36px">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/skin_color_text_orderlist_selector</item>
+    </style>
+
+    <!-- 交易价格加减按钮样式 -->
+    <style name="trade_increase_decrease_btn">
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:paddingTop">@dimen/trade_adjust_top</item>
+        <item name="android:layout_width">@dimen/ft_value_1080p_72px</item>
+        <item name="android:layout_height">@dimen/ft_value_1080p_72px</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!-- 新样式-交易价格加减按钮样式 -->
+    <style name="trade_increase_decrease_btn_new_style">
+        <item name="android:paddingLeft">@dimen/trade_new_style_button_margin_left</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <!-- 交易输入框样式 -->
+    <style name="trade_input_edittext" parent="text_h1_skinnable_48px">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginLeft">@dimen/trade_input_left_width</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColorHint">@color/color_text_h3_skinnable</item>
+        <item name="android:textColor">@color/color_trade_value_skinnable</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textCursorDrawable">@drawable/edit_text_cursor_shape</item>
+    </style>
+
+    <!-- 交易输入框label样式 -->
+    <style name="trade_input_label" parent="text_h2_skinnable_48px">
+        <item name="android:layout_width">@dimen/ft_value_1080p_234px</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:textColor">@color/color_text_h2_skinnable</item>
+    </style>
+
+
+    <style name="trade_order_type_desc_icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_24px</item>
+        <item name="android:textColor">@color/color_text_h2_skinnable</item>
+        <item name="android:background">@drawable/skin_news_tag_cells_comments</item>
+        <item name="android:layout_marginLeft">@dimen/ft_value_1080p_6px</item>
+        <item name="android:padding">@dimen/ft_value_1080p_6px</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="trade_home_unify_buy_power_icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/trade_unify_buy_power</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_27px</item>
+        <item name="android:textColor">@color/pub_text_tips_normal</item>
+        <item name="android:background">@drawable/trade_icon_bond_merge_bg_selector</item>
+        <item name="android:layout_marginLeft">@dimen/ft_value_1080p_9px</item>
+        <item name="android:padding">@dimen/ft_value_1080p_6px</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="futu_trade_quick_trade_item" parent="text_h1_skinnable_42px">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:text">@string/def_value</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="futu_trade_quick_trade_item_container">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+    </style>
+    <style name="futu_trade_checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/futu_trade_checkbox_selector</item>
+    </style>
+
+    <style name="trade_warning_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:paddingLeft">@dimen/new_ft_global_content_margin_left</item>
+        <item name="android:paddingRight">@dimen/new_ft_global_content_margin_right</item>
+    </style>
+    <style name="trade_warning_text_without_icon" parent="text_h2_skinnable_36px">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">10</item>
+    </style>
+
+    <style name="trade_direction_viewstub">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="derivatives_confirm_checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_42px</item>
+        <item name="android:textColor">@color/pub_text_h1_color</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableLeft">@drawable/futu_trade_checkbox_selector</item>
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+
+    <style name="trade_order_detail_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/ft_value_1080p_144px</item>
+        <item name="android:paddingLeft">@dimen/new_ft_global_content_margin_left</item>
+        <item name="android:paddingRight">@dimen/new_ft_global_content_margin_right</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/pub_block_card_bg_drawable</item>
+    </style>
+
+    <!--开户单选框-->
+    <style name="open_account_radio_button" parent="text_h1_common_48px">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:button">@drawable/pub_common_radio_button_selector</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:minHeight">@dimen/ft_value_1080p_144px</item>
+        <item name="android:paddingLeft">@dimen/ft_value_1080p_42px</item>
+    </style>
+
+    <!--开户单选框-->
+    <style name="open_account_checkbox" parent="text_h1_common_48px">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:button">@drawable/pub_common_multiple_button_selector</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:minHeight">@dimen/ft_value_1080p_144px</item>
+        <item name="android:paddingLeft">@dimen/ft_value_1080p_42px</item>
+    </style>
+
+    <!--开户continue按钮-->
+    <style name="open_account_continue_btn" parent="common_button_recommend_48px">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/ft_value_1080p_126px</item>
+    </style>
+
+    <!-- endregion -->
+
+    <!--region 牛牛圈-->
+
+    <!-- item头像 -->
+    <style name="feed_person_icon">
+        <item name="android:layout_width">@dimen/ft_value_1080p_120px</item>
+        <item name="android:layout_height">@dimen/ft_value_1080p_120px</item>
+    </style>
+
+    <!-- 二级文本 -->
+    <style name="feed_h2_text_42px" parent="@style/text_h2_common_42px">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 权限区域icon size -->
+    <style name="feed_admin_icon_size">
+        <item name="android:layout_height">@dimen/ft_value_1080p_42px</item>
+        <item name="android:layout_width">@dimen/ft_value_1080p_42px</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <!-- 推荐更新Toast 动画 -->
+    <style name="nncircle_recommend_toast_animation">
+        <item name="android:windowEnterAnimation">@anim/sns_recommend_toast_show</item>
+        <item name="android:windowExitAnimation">@anim/sns_recommend_toast_hide</item>
+    </style>
+
+    <!-- 牛牛圈新手引导:下一步按扭  -->
+    <style name="feed_guidance_to_next_button">
+        <item name="android:layout_marginBottom">@dimen/ft_value_1080p_42px</item>
+        <item name="android:layout_marginTop">@dimen/ft_value_1080p_42px</item>
+        <item name="android:minHeight">@dimen/ft_value_1080p_129px</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_btn_binding_selector</item>
+        <item name="android:textColor">@color/static_text_white</item>
+    </style>
+
+    <!-- 社区->专栏 下方的筛选栏 -->
+    <style name="community_columns_filter" parent="@style/medium_title_common">
+        <item name="android:button">@null</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">@dimen/ft_value_1080p_81px</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_42px</item>
+        <item name="android:background">@drawable/news_express_filter_selector</item>
+        <item name="android:layout_marginLeft">@dimen/ft_value_1080p_18px</item>
+        <item name="android:layout_marginBottom">@dimen/ft_value_1080p_33px</item>
+        <item name="android:layout_marginRight">@dimen/ft_value_1080p_18px</item>
+        <item name="android:layout_marginTop">@dimen/ft_value_1080p_33px</item>
+        <item name="android:paddingLeft">@dimen/ft_value_1080p_45px</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_45px</item>
+        <item name="android:paddingTop">@dimen/ft_value_1080p_12px</item>
+        <item name="android:paddingBottom">@dimen/ft_value_1080p_12px</item>
+    </style>
+    <!--endregion -->
+
+    <!-- region IM -->
+
+    <!-- 新的朋友页面-> "加为好友" 按钮 -->
+    <style name="add_new_friends">
+        <item name="android:textColor">@color/pub_text_reverse_color</item>
+        <item name="android:background">@drawable/common_btn_bg</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- endregion -->
+
+    <!-- region 资讯 -->
+
+    <!-- 资讯->自选下方的筛选栏 -->
+    <style name="option_news_filter" parent="@style/medium_title_common">
+        <item name="android:button">@null</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_42px</item>
+        <item name="android:background">@drawable/news_express_filter_selector</item>
+        <item name="android:minHeight">@dimen/ft_value_1080p_81px</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/ft_value_1080p_36px</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_36px</item>
+        <item name="android:layout_marginLeft">@dimen/ft_value_1080p_24px</item>
+        <item name="android:layout_marginBottom">@dimen/ft_value_1080p_27px</item>
+        <item name="android:layout_marginRight">@dimen/ft_value_1080p_24px</item>
+        <item name="android:layout_marginTop">@dimen/ft_value_1080p_27px</item>
+    </style>
+
+    <style name="futures_filter" parent="@style/medium_title_common">
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/medium_text_color_h1_selector</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_42px</item>
+    </style>
+
+    <!-- 资讯-快讯下方的筛选栏 -->
+    <style name="news_express_filter" parent="@style/medium_title_common">
+        <item name="android:button">@null</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">@dimen/ft_value_1080p_81px</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_42px</item>
+        <item name="android:background">@drawable/news_express_filter_selector</item>
+        <item name="android:layout_marginLeft">@dimen/ft_value_1080p_24px</item>
+        <item name="android:layout_marginBottom">@dimen/ft_value_1080p_27px</item>
+        <item name="android:layout_marginRight">@dimen/ft_value_1080p_24px</item>
+        <item name="android:layout_marginTop">@dimen/ft_value_1080p_27px</item>
+    </style>
+
+    <!-- 资讯-自选下方的筛选栏 -->
+    <style name="optional_subtab" parent="@style/medium_title_common">
+        <item name="android:button">@null</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">@dimen/ft_value_1080p_81px</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_42px</item>
+        <item name="android:background">@drawable/news_express_filter_selector</item>
+        <item name="android:paddingLeft">@dimen/ft_value_1080p_45px</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_45px</item>
+        <item name="android:layout_marginBottom">@dimen/ft_value_1080p_27px</item>
+        <item name="android:layout_marginRight">@dimen/ft_value_1080p_36px</item>
+        <item name="android:layout_marginTop">@dimen/ft_value_1080p_27px</item>
+    </style>
+
+    <!-- 新股日历 start -->
+    <style name="quote_ipo_purchase_style" parent="btn_base_style">
+        <item name="android:background">@drawable/common_btn</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 资讯->自选下方的筛选栏 -->
+    <style name="stock_news_filter" parent="@style/medium_title_common">
+        <item name="android:button">@null</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_42px</item>
+        <item name="android:background">@drawable/stock_tab_filter_selector</item>
+        <item name="android:minHeight">@dimen/ft_value_1080p_81px</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/ft_value_1080p_36px</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_36px</item>
+        <item name="android:layout_marginLeft">@dimen/ft_value_1080p_24px</item>
+        <item name="android:layout_marginBottom">@dimen/ft_value_1080p_27px</item>
+        <item name="android:layout_marginRight">@dimen/ft_value_1080p_24px</item>
+        <item name="android:layout_marginTop">@dimen/ft_value_1080p_27px</item>
+    </style>
+
+    <!-- 新股日历 end -->
+
+    <!-- endregion -->
+
+    <!-- region 我的 -->
+
+    <!-- region 账户资金详情页-->
+    <style name="futu_list_item_white_with_subtitle" parent="@style/item_bg_common">
+        <item name="android:layout_height">56dp</item>
+    </style>
+
+    <style name="ft_font_style_white_1080p_42px_normal">
+        <item name="android:textColor">@color/static_text_white</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_42px</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="futu_share_ratio_stock_icon">
+        <item name="android:layout_height">@dimen/share_oval_size</item>
+        <item name="android:layout_width">@dimen/share_oval_size</item>
+        <item name="android:layout_marginTop">4dp</item>
+    </style>
+
+    <style name="futu_share_ratio_stock_name" parent="text_reverse_common_36px">
+        <item name="android:layout_height">16dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_36px</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="futu_share_ratio_stock_code">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_27px</item>
+        <item name="android:textColor">@color/chart_ck_white_70</item>
+        <item name="android:layout_marginLeft">4dp</item>
+    </style>
+    <!-- endregion -->
+
+    <!-- endregion -->
+
+    <!-- region 图表 -->
+    <style name="chart_checkbox">
+        <item name="android:textSize">@dimen/chart_radio_button_text_size</item>
+        <item name="android:textColor">@color/block_highlight_skinnable_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:ellipsize">none</item>
+    </style>
+
+    <!-- K线图表使用 -->
+    <style name="index_radio_button" parent="@style/radio_button">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_42px</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/bg_tab_item_secondary_selector</item>
+        <item name="android:textColor">@color/medium_text_color_skinnable_selector</item>
+    </style>
+
+    <!-- endregion -->
+
+    <!-- region 登陆&注册 -->
+    <style name="static_login_input">
+        <item name="android:textColor">@color/static_text_white</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_54px</item>
+        <item name="android:textCursorDrawable">@drawable/edit_text_cursor_shape</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="login_close_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:src">@drawable/static_login_close_selector</item>
+    </style>
+
+    <style name="login_back_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:src">@drawable/pub_navbar_icon_back_selector</item>
+    </style>
+
+    <style name="login_btn_common">
+        <item name="android:textSize">@dimen/ft_font_size_1080p_48px</item>
+        <item name="android:textColor">@color/static_text_white</item>
+        <item name="android:background">@drawable/static_login_btn_selector</item>
+    </style>
+
+    <style name="login_title_text_common">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/login_title_text_margin_top</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_90px</item>
+        <item name="android:textColor">@color/static_text_white</item>
+    </style>
+
+    <style name="register_title_text_white_common">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/login_title_text_margin_top</item>
+        <item name="android:textColor">@color/pub_text_h1_color</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_90px</item>
+    </style>
+
+    <!-- 免费注册按钮（不随肤） -->
+    <style name="button_login_register">
+        <item name="android:textColor">@color/style_color_button_login_register_selector</item>
+        <item name="android:background">@drawable/static_btn_login_register_selector</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_48px</item>
+    </style>
+    <!--style 水平线 -->
+    <style name="login_line_horizontal_common">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/login_line_height</item>
+        <item name="android:alpha">0.3</item>
+        <item name="android:background">@color/static_line_signin</item>
+    </style>
+
+    <!--橙色button-->
+    <style name="common_button_recommend_48px">
+        <item name="android:textSize">@dimen/ft_font_size_1080p_48px</item>
+        <item name="android:textColor">@color/style_color_button_login_register_selector</item>
+        <item name="android:background">@drawable/static_login_register_bg_btn_selector</item>
+    </style>
+
+    <!--注册页面白色肤style 水平线 -->
+    <style name="pub_login_line_horizontal_common">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/login_line_height</item>
+        <item name="android:background">@drawable/pub_line_gray_drawable</item>
+    </style>
+
+    <!--白色页面button背景-->
+    <style name="cellphone_button_white_bg_common_48px">
+        <item name="android:textSize">@dimen/ft_font_size_1080p_48px</item>
+        <item name="android:textColor">@color/style_color_button_login_register_selector</item>
+        <item name="android:background">@drawable/static_login_register_bg_btn_selector</item>
+    </style>
+    <!-- region 修改密码 -->
+    <style name="modify_pwd_login_input_style">
+        <item name="android:textColorHint">@color/pub_text_h3_color</item>
+        <item name="android:textColor">@color/pub_text_h1_color</item>
+        <item name="android:textSize">?futu_font_setting_other_font_size_1080p_48px</item>
+        <item name="android:textCursorDrawable">@drawable/edit_text_cursor_shape</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@null</item>
+    </style>
+    <!-- endregion -->
+
+    <!-- endregion -->
+
+    <!-- region 全局搜索 -->
+
+    <style name="global_search_news_info_label">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/ft_value_1080p_24px</item>
+        <item name="android:background">@drawable/pub_news_tag_cells_comments</item>
+        <item name="android:paddingLeft">@dimen/ft_value_1080p_9px</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_9px</item>
+        <item name="android:paddingTop">@dimen/ft_value_1080p_3px</item>
+        <item name="android:paddingBottom">@dimen/ft_value_1080p_3px</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">?futu_font_setting_news_font_size_1080p_27px</item>
+        <item name="android:textColor">@color/pub_text_h2_color</item>
+    </style>
+    <!-- endregion -->
+
+    <!-- region 美股lv2 -->
+
+    <!-- 美股lv2 市场筛选pop item-->
+    <style name="US_Lv2_market_filter_pop_item">
+        <item name="android:textColor">@color/skin_chart_text_index_selector</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_48px</item>
+        <item name="android:minWidth">@dimen/ft_value_1080p_399px</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_24px</item>
+        <item name="android:paddingTop">@dimen/ft_value_1080p_24px</item>
+        <item name="android:paddingBottom">@dimen/ft_value_1080p_24px</item>
+    </style>
+
+    <style name="US_Lv2_visualization_setting_pop_item">
+        <item name="android:textColor">@color/skin_chart_text_index_selector</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_48px</item>
+    </style>
+
+    <!-- endregion -->
+
+    <!-- region 资讯-财经日历 -->
+    <style name="news_calendar_filter" parent="@style/medium_title_common">
+        <item name="android:button">@null</item>
+        <item name="android:background">@color/ck_transparent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">@dimen/ft_value_1080p_81px</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_42px</item>
+        <item name="android:paddingLeft">@dimen/ft_value_1080p_24px</item>
+        <item name="android:paddingBottom">@dimen/ft_value_1080p_27px</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_24px</item>
+        <item name="android:paddingTop">@dimen/ft_value_1080p_27px</item>
+    </style>
+
+    <style name="news_calendar_data_filter" parent="@style/medium_title_common">
+        <item name="android:button">@null</item>
+        <item name="android:background">@color/ck_transparent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">@dimen/ft_value_1080p_81px</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_42px</item>
+    </style>
+
+    <style name="news_calendar_popup_filter" parent="@style/medium_title_common">
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_42px</item>
+        <item name="android:background">@drawable/news_calendar_filter_selector</item>
+    </style>
+
+    <!-- endregion -->
+
+    <!--港股期权-->
+    <style name="hk_option_volume_ranking_button_item" parent="@style/medium_title_common">
+        <item name="android:button">@null</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">@dimen/ft_value_1080p_81px</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_42px</item>
+        <item name="android:background">@drawable/skin_common_filter_selector</item>
+    </style>
+
+    <!--外汇行情-->
+    <!--外汇行情排行榜头部（供排序）-->
+    <style name="forex_ranking_listed_header_sort_title" parent="@style/text_link2_skinnable_42px">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:drawableRight">@drawable/futu_title_sort_arrow_light</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_15px</item>
+        <item name="android:minWidth">@dimen/ft_value_1080p_300px</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginRight">2dp</item>
+    </style>
+
+    <!--外汇行情排行榜头部（name）-->
+    <style name="forex_ranking_listed_header_name" parent="@style/text_link2_skinnable_42px">
+        <item name="android:layout_width">@dimen/warrant_item_name_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:drawableRight">@drawable/futu_title_sort_arrow_light</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!--外汇行情列表item-->
+    <style name="forex_ranking_listed_common_item" parent="@style/text_h1_skinnable_48px">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_18px</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:text">@string/def_value</item>
+    </style>
+    <!--endregion -->
+
+    <!--debug页item-->
+    <style name="debug_page_item_style" parent="item_bg_common">
+        <item name="android:textSize">@dimen/ft_font_size_1080p_48px</item>
+        <item name="android:textColor">@color/pub_text_h1_color</item>
+        <item name="android:paddingLeft">@dimen/ft_value_1080p_48px</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!-- region 新股报告-榜单 -->
+    <style name="hk_new_stock_report_ranking_header" parent="@style/text_link2_skinnable">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">?futu_font_setting_quote_font_size_1080p_36px</item>
+        <item name="android:drawableRight">@drawable/futu_title_sort_arrow_light</item>
+        <item name="android:drawablePadding">@dimen/ft_value_1080p_12px</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_24px</item>
+    </style>
+
+    <style name="hk_new_stock_report_ranking_item" parent="@style/text_h1_skinnable">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">?futu_font_setting_quote_font_size_1080p_42px</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_24px</item>
+    </style>
+
+    <style name="hk_new_stock_report_ranking_scroll_header" parent="@style/text_link2_skinnable">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">@dimen/ft_value_1080p_360px</item>
+        <item name="android:textSize">?futu_font_setting_quote_font_size_1080p_36px</item>
+        <item name="android:drawableRight">@drawable/futu_title_sort_arrow_light</item>
+        <item name="android:drawablePadding">@dimen/ft_value_1080p_12px</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_24px</item>
+    </style>
+
+    <style name="hk_new_stock_report_ranking_scroll_item" parent="@style/text_h1_skinnable">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">?futu_font_setting_quote_font_size_1080p_42px</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_24px</item>
+    </style>
+    <!-- endregion -->
+
+    <style name="derivatives_tab_style" parent="@style/medium_title_common">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/skin_common_filter_selector</item>
+        <item name="android:paddingLeft">@dimen/ft_value_1080p_36px</item>
+        <item name="android:paddingTop">@dimen/ft_value_1080p_9px</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_36px</item>
+        <item name="android:paddingBottom">@dimen/ft_value_1080p_9px</item>
+        <item name="android:layout_marginLeft">@dimen/ft_value_1080p_48px</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_42px</item>
+    </style>
+
+    <style name="hsgt_tab_style" parent="@style/medium_title_common">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/ft_value_1080p_90px</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/skin_bg_common_tab_block_selector</item>
+        <item name="android:paddingLeft">@dimen/ft_value_1080p_36px</item>
+        <item name="android:paddingTop">@dimen/ft_value_1080p_9px</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_36px</item>
+        <item name="android:paddingBottom">@dimen/ft_value_1080p_9px</item>
+        <item name="android:layout_marginLeft">@dimen/ft_value_1080p_48px</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_42px</item>
+    </style>
+
+    <style name="trade_analysis_filter_time_style" parent="@style/medium_title_common">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/ft_value_1080p_90px</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/pub_bg_common_tab_block_selector</item>
+        <item name="android:paddingLeft">@dimen/ft_value_1080p_21px</item>
+        <item name="android:paddingTop">@dimen/ft_value_1080p_9px</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_21px</item>
+        <item name="android:paddingBottom">@dimen/ft_value_1080p_9px</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_39px</item>
+    </style>
+
+    <style name="trade_security_analysis_tab_style" parent="@style/medium_title_common">
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/pub_bg_common_tab_block_selector</item>
+        <item name="android:paddingLeft">@dimen/ft_value_1080p_36px</item>
+        <item name="android:paddingTop">@dimen/ft_value_1080p_18px</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_36px</item>
+        <item name="android:paddingBottom">@dimen/ft_value_1080p_18px</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_42px</item>
+        <item name="android:textColor">@color/pub_color_text_tool_bar_tab_view_selector</item>
+    </style>
+
+    <style name="news_radiobutton_tab_style" parent="@style/medium_title_common">
+        <item name="android:button">@null</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_42px</item>
+        <item name="android:paddingTop">@dimen/ft_font_size_1080p_18px</item>
+        <item name="android:paddingBottom">@dimen/ft_font_size_1080p_18px</item>
+        <item name="android:textColor">@color/color_text_tool_bar_tab_view_selector</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="flow_in_radiobutton_tab_style" parent="@style/medium_title_common">
+        <item name="android:button">@null</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_42px</item>
+        <item name="android:paddingTop">@dimen/ft_font_size_1080p_18px</item>
+        <item name="android:paddingBottom">@dimen/ft_font_size_1080p_18px</item>
+        <item name="android:textColor">@color/color_text_tool_bar_tab_view_selector</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="company_repurchase_item_header" parent="@style/text_link2_skinnable">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:maxWidth">@dimen/ft_value_1080p_360px</item>
+        <item name="android:layout_marginLeft">@dimen/ft_value_1080p_90px</item>
+        <item name="android:textSize">?futu_font_setting_quote_font_size_1080p_36px</item>
+        <item name="android:gravity">center_vertical|right</item>
+    </style>
+
+    <style name="company_repurchase_item" parent="@style/text_h1_skinnable">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/ft_value_1080p_90px</item>
+        <item name="android:textSize">?futu_font_setting_quote_font_size_1080p_42px</item>
+        <item name="android:gravity">center_vertical|right</item>
+    </style>
+
+    <!-- 资讯->自选下方的筛选栏 -->
+    <style name="option_news_filter_sort" parent="@style/medium_title_common">
+        <item name="android:button">@null</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_36px</item>
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">@dimen/ft_value_1080p_108px</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/ft_value_1080p_18px</item>
+        <item name="android:layout_marginRight">@dimen/ft_value_1080p_69px</item>
+    </style>
+
+    <!-- 资讯->筛选pop  的item字体 -->
+    <style name="pop_filter_item" parent="@style/medium_title_common">
+        <item name="android:button">@null</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_42px</item>
+        <item name="android:background">@drawable/news_express_filter_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/ft_value_1080p_48px</item>
+        <item name="android:layout_marginBottom">@dimen/ft_value_1080p_24px</item>
+        <item name="android:layout_marginTop">@dimen/ft_value_1080p_36px</item>
+    </style>
+
+    <style name="pop_filter_title" parent="@style/medium_title_common">
+        <item name="android:button">@null</item>
+        <item name="android:layout_marginLeft">@dimen/ft_value_1080p_48px</item>
+        <item name="android:layout_marginTop">@dimen/ft_value_1080p_36px</item>
+        <item name="android:textSize">@dimen/ft_font_size_1080p_42px</item>
+        <item name="android:background">@color/ck_transparent</item>
+    </style>
+
+    <!-- region 基金筛选标题样式 -->
+
+    <style name="quote_fund_filter_style" parent="text_h1_skinnable_42px">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:background">@drawable/skin_block_card_bg_drawable</item>
+        <item name="android:drawableRight">@drawable/icon_drop_dark</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingRight">@dimen/ft_value_1080p_27px</item>
+        <item name="android:textSize">?futu_font_setting_quote_font_size_1080p_42px_max_3</item>
+    </style>
+
+    <style name="quote_fund_filter_header_title" parent="@style/warrant_header_title">
+        <item name="android:layout_width">@dimen/quote_fund_filter_head_name_width</item>
+    </style>
+
+    <style name="quote_fund_scroll_header_title" parent="@style/quote_scroll_header_title">
+        <item name="android:layout_width">@dimen/quote_fund_filter_head_item_width</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="quote_fund_scroll_filter_item" parent="@style/quote_scroll_common_item">
+        <item name="android:layout_width">@dimen/quote_fund_filter_head_item_width</item>
+    </style>
+
+    <style name="quote_fund_screener_item_title_style" parent="@style/text_h1_skinnable_42px">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/ft_value_1080p_60px</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">?futu_font_setting_quote_font_size_1080p_42px_max_3</item>
+    </style>
+
+    <!-- endregion -->
+
+</resources>
