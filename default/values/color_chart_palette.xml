@@ -3,10 +3,10 @@
 <resources>
 
     <!-- model 富途蓝 10%透明度 -->
-    <color name="chart_ck_futublue_10">#1A0A5ECB</colors> 
+    <color name="chart_ck_futublue_10">#1A0A5ECB</color> 
 
     <!-- model 粉色_暗4 -->
-    <color name="chart_ck_pink_dark4">#B56B9B</color>
+    <color name="chart_ck_futublue_110">#B56B9B</color>
 
      <!-- model 粉色 10%透明度 -->
     <color name="chart_ck_pink_10">#1AE380C1</color>     
