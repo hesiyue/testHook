@@ -6,10 +6,10 @@
     <color name="chart_ck_futublue_30">#0A5ECB</color>
 
     <!-- model 富途蓝 30%透明度 -->
-    <color name="chart_ck_futublue_32">@color/#4D0A5ECB</color>  
+    <color name="chart_ck_futublue_32">#4D0A5ECB</color>  
 
     <!-- model 富途蓝 10%透明度 -->
-    <color name="chart_ck_futublue_31">#1A0A5ECB</color>        
+    <color name="chart_ck_futublue_31">@color/#1A0A5ECB</color>        
 
     <!-- model 表格 蓝-->
     <color name="chart_ck_sheet1_blue">#65A5FF</color>
