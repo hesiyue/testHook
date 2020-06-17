@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- APP 图表色值表 -->
+<resources>
+
+
+   <!-- model 棕 -->
+    <color name="ck_brown">#673E00</color>
+
+
+    <!-- model 棕-->
+    <color name="ck_brown">#4C3002</color>
+
+
+</resources>
